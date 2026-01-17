@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T9 Pro - تفاصيل المنتج</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header (Same as index.html) -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">T9 <span>Pro</span></a>
+            <nav class="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="product.html">المنتج</a>
+                <a href="about.html">من نحن</a>
+                <a href="contact.html">اتصل بنا</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-page-main">
+        <section class="product-details">
+            <div class="container">
+                <div class="product-details-grid">
+                    <!-- Product Gallery -->
+                    <div class="product-gallery">
+                        <div class="main-image">
+                            <img id="mainProductImage" src="images/product-main.webp" alt="T9 Pro Trimmer">
+                        </div>
+                        <div class="gallery-thumbnails">
+                            <img src="images/product-main.webp" alt="Main view" onclick="changeImage('images/product-main.webp')">
+                            <img src="images/product-side.webp" alt="Side view" onclick="changeImage('images/product-side.webp')">
+                            <img src="images/product-charging.webp" alt="Charging" onclick="changeImage('images/product-charging.webp')">
+                            <img src="images/product-blade.webp" alt="Blade close-up" onclick="changeImage('images/product-blade.webp')">
+                        </div>
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="product-info">
+                        <h1>T9 Pro - ماكينة حلاقة احترافية</h1>
+                        <div class="price-tag"><small>29.99€</small>2.17€</div>
+                        <p>ودّع الحلاقة المملة والألم. مع T9 Pro، احصل على قص مثالي 0mm وأداء احترافي في أي مكان. شحن USB، محمولة، ومصممة للرجال الذين يطلبون الأفضل.</p>
+                        
+                        <a href="https://your-affiliate-link.com" class="btn btn-primary" target="_blank">اطلب الآن ووفر 93%</a>
+
+                        <div class="product-features-list">
+                            <h3>المميزات الرئيسية:</h3>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> قص احترافي بدقة 0mm</li>
+                                <li><i class="fas fa-check-circle"></i> شحن USB عالمي</li>
+                                <li><i class="fas fa-check-circle"></i> بطارية ليثيوم قوية</li>
+                                <li><i class="fas fa-check-circle"></i> مقاومة للماء IPX7</li>
+                                <li><i class="fas fa-check-circle"></i> شفرات فولاذ مقاومة للصدأ</li>
+                                <li><i class="fas fa-check-circle"></i> تصميم أنيق ومريح</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specifications Section -->
+        <section class="specifications">
+            <div class="container">
+                <h2 class="section-title">المواصفات الفنية</h2>
+                <div class="specs-table">
+                    <table>
+                        <tr><td>الموديل</td><td>T9 Pro</td></tr>
+                        <tr><td>نوع الشفرة</td><td>فولاذ مقاوم للصدأ</td></tr>
+                        <tr><td>دقة القص</td><td>0mm</td></tr>
+                        <tr><td>نوع البطارية</td><td>ليثيوم أيون</td></tr>
+                        <tr><td>وقت الشحن</td><td>ساعة واحدة</td></tr>
+                        <tr><td>مدة التشغيل</td><td>حتى 90 دقيقة</td></tr>
+                        <tr><td>مقاومة الماء</td><td>IPX7</td></tr>
+                        <tr><td>الوزن</td><td>150 جرام</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="main-footer">
+        <!-- ... (copy footer code from index.html) ... -->
+    </footer>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainProductImage').src = src;
+        }
+    </script>
+</body>
+</html>
